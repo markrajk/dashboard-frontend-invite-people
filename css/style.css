@@ -1,0 +1,211 @@
+html {
+  font-size: 62.5%; }
+  @media (max-width: 1500px) {
+    html {
+      font-size: 58%; } }
+  @media (max-width: 991px) {
+    html {
+      font-size: 53%; } }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif; }
+
+.main {
+  width: 100%;
+  height: 100%; }
+
+.sidebar {
+  height: 100%;
+  min-width: 24.4rem;
+  padding: 4.2rem 3rem;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.06);
+  z-index: 1000; }
+  .sidebar-body {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */ }
+    .sidebar-body::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0; }
+  .sidebar-info-img {
+    width: 6.7rem;
+    height: 6.7rem;
+    border-radius: 50%; }
+  .sidebar-info-name {
+    padding-left: 1.3rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #002257; }
+    .sidebar-info-name span {
+      display: inline-block;
+      width: 0.7rem;
+      height: 0.7rem;
+      margin-left: 0.7rem;
+      background-color: #2ebd41;
+      border-radius: 50%; }
+  .sidebar-info-title {
+    padding-left: 1.3rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #969ead; }
+  .sidebar-group {
+    padding-top: 4rem; }
+    .sidebar-group:nth-of-type(2), .sidebar-group:nth-of-type(3) {
+      padding-top: 3.5rem; }
+    .sidebar-group .list-unstyled {
+      margin: 0; }
+    .sidebar-group h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.42;
+      color: #687181; }
+    .sidebar-group select {
+      height: 3.5rem;
+      width: 100%;
+      margin-top: 0.7rem;
+      padding: 0 0.7rem;
+      font-size: 1.2rem;
+      border-color: #eaebee;
+      color: #002257;
+      border-radius: 3px; }
+    .sidebar-group .list-unstyled li a {
+      display: inline-block;
+      height: 1.8rem;
+      margin-top: 1.7rem;
+      text-decoration: none;
+      font-size: 1.3rem;
+      line-height: 1.69;
+      color: #002257; }
+    .sidebar-group .list-unstyled li.active {
+      font-weight: 700; }
+
+.results {
+  width: 100%;
+  background-color: #f8f9fb;
+  padding: 4.1rem 4.6rem 2.8rem 3.4rem;
+  overflow: auto; }
+  .results-header-logout {
+    height: 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6e747e; }
+    .results-header-logout i {
+      margin-top: 0;
+      margin-left: -3px;
+      font-size: 1.8rem;
+      color: #6e747e; }
+  .results-header h2 {
+    height: 3.7rem;
+    margin: 0;
+    margin-bottom: 6.4rem;
+    margin-top: .5rem;
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 1.37;
+    color: #1a173b; }
+  .results-body {
+    font-family: 'Lato', sans-serif; }
+    .results-body .invite {
+      position: relative;
+      width: 82rem;
+      height: 73vh;
+      min-height: 60rem;
+      padding: 2.8rem 2.3rem;
+      border: solid 1.5px #eaebee;
+      border-radius: 3px; }
+      @media (max-width: 1199px) {
+        .results-body .invite {
+          width: 100%; } }
+      .results-body .invite h3 {
+        margin-bottom: 3.1rem;
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: 0.13px;
+        color: #1a173b; }
+      .results-body .invite .input {
+        position: relative;
+        width: 30.4rem; }
+        .results-body .invite .input label {
+          display: block;
+          margin-bottom: .9rem;
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: #000000; }
+        .results-body .invite .input input {
+          width: 30.4rem;
+          height: 4.8rem;
+          padding: 1.3rem 1.5rem;
+          margin-bottom: 3.3rem;
+          font-size: 16px;
+          border: solid 1.3px #c3cad9;
+          background-color: #ffffff; }
+          .results-body .invite .input input:focus {
+            outline: none;
+            border: solid 2px #0077ff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+          .results-body .invite .input input:focus ~ .search-suggestion {
+            display: block; }
+          .results-body .invite .input input::placeholder {
+            color: #959ead; }
+        .results-body .invite .input .search-suggestion {
+          display: none;
+          max-height: 26rem;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border: solid 1px #f2f2f2;
+          background-color: #ffffff;
+          transform: translate(0, 100%);
+          z-index: 500;
+          overflow: auto; }
+          .results-body .invite .input .search-suggestion-item {
+            height: 5.2rem;
+            padding: 2rem 1.6rem 2.5rem 1.6rem; }
+            .results-body .invite .input .search-suggestion-item:hover {
+              color: #FFF;
+              background-color: #0077ff; }
+              .results-body .invite .input .search-suggestion-item:hover p {
+                color: #FFF; }
+            .results-body .invite .input .search-suggestion-item p {
+              margin: 0; }
+            .results-body .invite .input .search-suggestion-item .team {
+              padding-top: 5px;
+              margin-bottom: -2px;
+              font-size: 1.4rem;
+              color: #000a19; }
+            .results-body .invite .input .search-suggestion-item .people {
+              font-size: 1.2rem;
+              color: #5e636b; }
+          .results-body .invite .input .search-suggestion-footer {
+            height: 3.9rem;
+            border: solid 1px #f2f2f2;
+            padding-left: 1.6rem;
+            font-size: 1.4rem;
+            color: #000a19; }
+            .results-body .invite .input .search-suggestion-footer i {
+              margin-right: .8rem; }
+            .results-body .invite .input .search-suggestion-footer a {
+              margin-left: .5rem; }
+      .results-body .invite .btn-custom-invitation {
+        position: absolute;
+        bottom: 7.2rem;
+        left: 2.1rem;
+        width: 156px;
+        height: 40px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #FFF;
+        border: none;
+        border-radius: 3px;
+        background-color: #0077ff;
+        outline: none; }

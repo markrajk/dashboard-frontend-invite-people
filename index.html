@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boilerplate</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito+Sans:300,400|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- MAIN WRAPPER -->
+    <main class="main d-flex">
+
+        <!-- SIDEBAR SECTION-->
+        <div class="sidebar d-flex flex-column bg-white">
+            <div class="sidebar-info d-flex align-items-center">
+                <img class="sidebar-info-img" src="img/profile-pic.png" alt="profile picture">
+                <div class="d-flex flex-column">
+                    <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+                    <p class="sidebar-info-title m-0">Boss</p>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>GIVE FEEDBACK</h3>
+                <select name="sidebar-select" id="sidebar-select">
+                    <option value="one">To you people</option>
+                </select>
+            </div>
+
+            <div class="sidebar-body">
+                <div class="sidebar-group">
+                    <h3>TEAMS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">Export results </a></li>
+                        <li><a href="#">Manage teams </a></li>
+                        <li><a href="#">Create a new team </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>PEOPLE</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li class="active"><a href="#">Export results </a></li>
+                        <li><a href="#">Manage people</a></li>
+                        <li><a href="#">Invite new people </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ME</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">My account </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ADMIN</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">User/team register </a></li>
+                        <li><a href="#">Company Profile </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- RESULTS SECTION -->
+        <div class="results">
+            <div class="results-header">
+                <div class="results-header-logout d-flex justify-content-end">
+                    <p class="text-right align-middle">Logout <i class="material-icons align-middle">exit_to_app</i></p>
+                </div>
+                <h2 class="mt-1 align-middle">Invite new people</h2>
+            </div>
+
+            <div class="results-body">
+                <div class="invite bg-white">
+                    <h3>Invite new user</h3>
+
+                    <div class="input">
+                        <label for="email">ENTER EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="input">
+                        <label for="search">SELECT TEAM</label>
+                        <input class="mb-0" type="text" name="search" id="search" placeholder="Find team" autocomplete="off">
+                        <div class="search-suggestion">
+                            <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                <p class="team">Team Marketing</p>
+                                <p class="people">20 people</p>
+                            </div>
+                            <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                <p class="team">Team Marketing</p>
+                                <p class="people">20 people</p>
+                            </div>
+                            <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                <p class="team">Team Marketing</p>
+                                <p class="people">20 people</p>
+                            </div>
+                            <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                <p class="team">Team Marketing</p>
+                                <p class="people">20 people</p>
+                            </div>
+                            <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                <p class="team">Team Marketing</p>
+                                <p class="people">20 people</p>
+                            </div>
+                            <div class="search-suggestion-footer d-flex align-items-center">
+                                <i class="material-icons">add</i>
+                                <span>Team not found?</span>
+                                <a href="#">Register new?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-custom-invitation">Send invitation</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $('.your-checkbox').prop('indeterminate', true)
+    </script>
+</body>
+</html>
