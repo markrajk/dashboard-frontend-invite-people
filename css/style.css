@@ -135,8 +135,7 @@ body {
         color: #1a173b; }
       .results-body .invite .input {
         position: relative;
-        width: 100%;
-        max-width: 30.4rem; }
+        width: 28rem; }
         .results-body .invite .input label {
           display: block;
           margin-bottom: .9rem;
@@ -144,7 +143,7 @@ body {
           font-weight: 700;
           color: #000000; }
         .results-body .invite .input input {
-          width: 28rem;
+          width: 100%;
           height: 4.45rem;
           padding: 1.3rem 1.5rem;
           margin-bottom: 3.3rem;
@@ -155,7 +154,7 @@ body {
             .results-body .invite .input input {
               width: 30.4rem;
               height: 4.8rem; } }
-          @media (max-width: 767px) {
+          @media (max-width: 991px) {
             .results-body .invite .input input {
               width: 100%; } }
           .results-body .invite .input input:focus {
@@ -173,7 +172,7 @@ body {
           position: absolute;
           left: 0;
           bottom: 0;
-          width: 30.4rem;
+          width: 100%;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           border: solid 1px #f2f2f2;
           background-color: #ffffff;
@@ -202,6 +201,7 @@ body {
               font-size: 1.2rem;
               color: #5e636b; }
           .results-body .invite .input .search-suggestion-footer {
+            width: 100%;
             height: 3.9rem;
             border: solid 1px #f2f2f2;
             padding-left: 1.6rem;
