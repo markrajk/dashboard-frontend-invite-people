@@ -137,17 +137,21 @@ body {
         .results-body .invite .input label {
           display: block;
           margin-bottom: .9rem;
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 700;
           color: #000000; }
         .results-body .invite .input input {
-          width: 30.4rem;
-          height: 4.8rem;
+          width: 28rem;
+          height: 4.45rem;
           padding: 1.3rem 1.5rem;
           margin-bottom: 3.3rem;
-          font-size: 16px;
+          font-size: 1.4rem;
           border: solid 1.3px #c3cad9;
           background-color: #ffffff; }
+          @media (max-width: 1199px) {
+            .results-body .invite .input input {
+              width: 30.4rem;
+              height: 4.8rem; } }
           @media (max-width: 767px) {
             .results-body .invite .input input {
               width: 100%; } }
@@ -158,6 +162,7 @@ body {
           .results-body .invite .input input:focus ~ .search-suggestion {
             display: block; }
           .results-body .invite .input input::placeholder {
+            font-size: 1.4rem;
             color: #959ead; }
         .results-body .invite .input .search-suggestion {
           display: none;

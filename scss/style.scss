@@ -234,20 +234,25 @@ body {
       & label {
         display: block;
         margin-bottom: .9rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 700;
         color: #000000;
       }
 
       & input {
-        width: 30.4rem;
-        height: 4.8rem;
+        width: 28rem;
+        height: 4.45rem;
         padding: 1.3rem 1.5rem;
         margin-bottom: 3.3rem;
-        font-size: 16px;
+        font-size: 1.4rem;
         //border: solid 2px #0077ff;
         border: solid 1.3px #c3cad9;
         background-color: #ffffff;
+
+        @include respond(desktop-lg) {
+          width: 30.4rem;
+          height: 4.8rem;
+        }
 
         @include respond(desktop-sm) {
           width: 100%;
@@ -265,6 +270,7 @@ body {
         }
 
         &::placeholder {
+          font-size: 1.4rem;
           color: #959ead;
         }
       }
