@@ -2,10 +2,10 @@ html {
   font-size: 62.5%; }
   @media (max-width: 1500px) {
     html {
-      font-size: 53%; } }
+      font-size: 58%; } }
   @media (max-width: 991px) {
     html {
-      font-size: 45%; } }
+      font-size: 53%; } }
 
 body {
   width: 100vw;
@@ -116,8 +116,8 @@ body {
     .results-body .invite {
       position: relative;
       width: 82rem;
-      height: 100%;
-      max-height: 72vh;
+      height: 73vh;
+      min-height: 60rem;
       padding: 2.8rem 2.3rem;
       border: solid 1.5px #eaebee;
       border-radius: 3px; }
@@ -132,8 +132,7 @@ body {
         color: #1a173b; }
       .results-body .invite .input {
         position: relative;
-        width: 100%;
-        max-width: 30.4rem; }
+        width: 30.4rem; }
         .results-body .invite .input label {
           display: block;
           margin-bottom: .9rem;
@@ -148,9 +147,6 @@ body {
           font-size: 16px;
           border: solid 1.3px #c3cad9;
           background-color: #ffffff; }
-          @media (max-width: 767px) {
-            .results-body .invite .input input {
-              width: 100%; } }
           .results-body .invite .input input:focus {
             outline: none;
             border: solid 2px #0077ff;
@@ -165,16 +161,13 @@ body {
           position: absolute;
           left: 0;
           bottom: 0;
-          width: 30.4rem;
+          width: 100%;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           border: solid 1px #f2f2f2;
           background-color: #ffffff;
           transform: translate(0, 100%);
           z-index: 500;
           overflow: auto; }
-          @media (max-width: 767px) {
-            .results-body .invite .input .search-suggestion {
-              width: 100%; } }
           .results-body .invite .input .search-suggestion-item {
             height: 5.2rem;
             padding: 2rem 1.6rem 2.5rem 1.6rem; }
@@ -204,7 +197,9 @@ body {
             .results-body .invite .input .search-suggestion-footer a {
               margin-left: .5rem; }
       .results-body .invite .btn-custom-invitation {
-        margin-top: 8rem;
+        position: absolute;
+        bottom: 7.2rem;
+        left: 2.1rem;
         width: 156px;
         height: 40px;
         font-size: 1.5rem;
@@ -214,3 +209,5 @@ body {
         border-radius: 3px;
         background-color: #0077ff;
         outline: none; }
+
+/*# sourceMappingURL=style.css.map */

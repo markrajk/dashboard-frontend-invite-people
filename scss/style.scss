@@ -42,11 +42,11 @@ html {
   font-size: 62.5%;
   //font-size: 68%;
   @include respond(desktop-xl) {
-    font-size: 58%;
+    font-size: 53%;
   }
 
   @include respond(desktop-md) {
-    font-size: 53%;
+    font-size: 45%;
   }
 }
 
@@ -207,8 +207,9 @@ body {
     & .invite {
       position: relative;
       width: 82rem;
-      height: 73vh;
-      min-height: 60rem;
+      height: 100%;
+      //min-height: 60rem;
+      max-height: 72vh;
       padding: 2.8rem 2.3rem;
       border: solid 1.5px #eaebee;
       border-radius: 3px;
@@ -226,7 +227,9 @@ body {
 
     & .input {
         position: relative;
-        width: 30.4rem;
+        width: 100%;
+        max-width: 30.4rem;
+
 
       & label {
         display: block;
@@ -245,6 +248,10 @@ body {
         //border: solid 2px #0077ff;
         border: solid 1.3px #c3cad9;
         background-color: #ffffff;
+
+        @include respond(desktop-sm) {
+          width: 100%;
+        }
 
         &:focus {
           outline: none;
@@ -268,13 +275,17 @@ body {
           position: absolute;
           left: 0;
           bottom: 0;
-          width: 100%;
+          width: 30.4rem;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           border: solid 1px #f2f2f2;
           background-color: #ffffff;
           transform: translate(0, 100%);
           z-index: 500;
           overflow: auto;
+
+          @include respond(desktop-sm) {
+            width: 100%;
+          }
 
           &-item {
             height: 5.2rem;
@@ -324,9 +335,10 @@ body {
       }
     }
     & .btn-custom-invitation {
-        position: absolute;
-        bottom: 7.2rem;
-        left: 2.1rem;
+        // position: absolute;
+        // bottom: 7.2rem;
+        // left: 2.1rem;
+        margin-top: 8rem;
         width: 156px;
         height: 40px;
         font-size: 1.5rem;
@@ -336,6 +348,7 @@ body {
         border-radius: 3px;
         background-color: #0077ff;
         outline: none;
+        
     }
   }
 }
