@@ -136,6 +136,19 @@ body {
       .results-body .invite .input {
         position: relative;
         width: 28rem; }
+        @media (max-width: 550px) {
+          .results-body .invite .input {
+            width: 80%; } }
+        .results-body .invite .input .suggestion-container {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          display: none;
+          height: 30rem;
+          transform: translate(0, 100%);
+          width: 100%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border-top: none; }
         .results-body .invite .input label {
           display: block;
           margin-bottom: .9rem;
@@ -159,24 +172,23 @@ body {
               width: 100%; } }
           .results-body .invite .input input:focus {
             outline: none;
-            border: solid 2px #0077ff;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
-          .results-body .invite .input input:focus ~ .search-suggestion {
+            border: solid 2px #0077ff; }
+          .results-body .invite .input input:focus ~ .suggestion-container .search-suggestion {
+            display: block; }
+          .results-body .invite .input input:focus ~ .suggestion-container {
             display: block; }
           .results-body .invite .input input::placeholder {
             font-size: 1.4rem;
             color: #959ead; }
         .results-body .invite .input .search-suggestion {
           display: none;
-          max-height: 26rem;
+          height: 26rem;
           position: absolute;
           left: 0;
-          bottom: 0;
+          top: 0;
           width: 100%;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          border: solid 1px #f2f2f2;
           background-color: #ffffff;
-          transform: translate(0, 100%);
+          transform: translate(0, 0);
           z-index: 500;
           overflow: auto; }
           @media (max-width: 767px) {
@@ -201,12 +213,16 @@ body {
               font-size: 1.2rem;
               color: #5e636b; }
           .results-body .invite .input .search-suggestion-footer {
+            position: absolute;
+            bottom: 0;
             width: 100%;
             height: 3.9rem;
             border: solid 1px #f2f2f2;
+            border-top: none;
             padding-left: 1.6rem;
             font-size: 1.4rem;
-            color: #000a19; }
+            color: #000a19;
+            background-color: #FFF; }
             .results-body .invite .input .search-suggestion-footer i {
               margin-right: .8rem; }
             .results-body .invite .input .search-suggestion-footer a {
