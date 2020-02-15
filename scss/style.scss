@@ -276,10 +276,10 @@ body {
         border: solid 1.3px #c3cad9;
         background-color: #ffffff;
 
-        @include respond(desktop-lg) {
-          width: 30.4rem;
-          height: 4.8rem;
-        }
+        // @include respond(desktop-lg) {
+        //   width: 30.4rem;
+        //   height: 4.8rem;
+        // }
 
         @include respond(desktop-md) {
           width: 100%;
