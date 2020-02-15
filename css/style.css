@@ -135,7 +135,7 @@ body {
         color: #1a173b; }
       .results-body .invite .input {
         position: relative;
-        max-width: 28rem; }
+        width: 28rem; }
         .results-body .invite .input .suggestion-container {
           width: 100%;
           position: absolute;
