@@ -116,13 +116,14 @@ body {
     line-height: 1.37;
     color: #1a173b; }
   .results-body {
-    font-family: 'Lato', sans-serif; }
+    font-family: 'Lato', sans-serif;
+    height: 72vh; }
     .results-body .invite {
       position: relative;
       max-width: 82rem;
+      min-height: 70rem;
       height: 100%;
-      min-height: 47rem;
-      max-height: 72vh;
+      max-height: 80rem;
       padding: 2.8rem 2.3rem;
       border: solid 1.5px #eaebee;
       border-radius: 3px; }
@@ -223,7 +224,7 @@ body {
             .results-body .invite .input .search-suggestion-footer a {
               margin-left: .5rem; }
       .results-body .invite .btn-custom-invitation {
-        margin-top: 30%;
+        margin-top: auto;
         width: 15rem;
         height: 4rem;
         font-size: 1.5rem;
